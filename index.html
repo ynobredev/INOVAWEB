@@ -3,79 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InovaWeb</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>InovaWeb | Soluções Tecnológicas</title>
 </head>
 <body>
-    <!--Cabeçalho-->
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="https://www.souspike.com.br" target="_blank">SOUSPIKE</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>InovaWeb</h1>
+            <p class="destaque">A sua solução tecnológica <strong>MASTER</strong></p>
+            <p>Criamos sites modernos, responsivos e inovadores para a sua empresa se destacar no mercado digital.</p>
+        </div>
+        <figure>
+            <img src="./spiritmonger.jpg" alt="Banner ilustrativo da InovaWeb apresentando soluções digitais" width="500">
+        </figure>
+    </header>
 
-<h1><b>InovaWeb</b></h1>
-<h2><b>A sua solução tecnológica <i>MASTER</i></b></h2>
-<p>Criamos sites modernos, responsivos e inovadores para a sua empresa se destacar no mercado digital.</p>
-<hr noshade>
-<img src="./spiritmonger.jpg" alt="banner do site" width="500">
-<h3>Lista de serviços:</h3>
-<ul>
-    <li>Desenvolvimento de sites</li>
-    <li>Desenvolvimento de apps</li>
-    <li>Consultoria em Tecnologia</li>
-    <li>Suporte Técnico</li>
-</ul>
-<ol>
-    <li>Entre em contato conosco</li>
-    <li>Solicite um orçamento</li>
-    <li>Desenvolvemos a solução ideal para você</li>
-    <li>Veja seu negócio crescer com a InovaWeb</li>
-</ol>
-<table border="2">
-    <caption><b>Preços dos Serviços</b></caption>
-    <thead> 
-    <tr>
-        <th>Serviço</th>
-        <th>Preço</th>
-        <th>Descrição</th>
-    </tr>
-    </thead>
-    <tr>
-        <td>Desenvolvimento de sites</td>
-        <td>R$ 2.000,00</td>
-        <td>Criação e ajustes simples de sites</td>
-    </tr>
-    <tr>
-        <td>Desenvolvimento de apps</td>
-        <td>R$ 5.000,00</td>
-        <td>Criação e ajustes simples de apps</td>
-    </tr>
-    <tr>
-        <td>Consultoria em Tecnologia</td>
-        <td>R$ 500,00/hora</td>
-        <td>Orientação e planejamento tecnológico</td>
-    </tr>
-    <tr>
-        <td>Suporte Técnico</td>
-        <td>R$ 200,00/hora</td>
-        <td>Assistência técnica e resolução de problemas</td>
-    </tr>
-</table>
-<br>
-<br>
-<br>
-<h4>Formulário de contato</h4>
-<form action="enviar.php" method="post">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome"><br>
-    
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" maxlength="35" rows="4" cols="50" required></textarea><br>
+    <main>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Desenvolvimento de sites</li>
+                <li>Desenvolvimento de apps</li>
+                <li>Consultoria em Tecnologia</li>
+                <li>Suporte Técnico</li>
+            </ul>
 
-    <input type="submit" value="Enviar">
-<br>
-<br>
+            <h3>Como trabalhamos</h3>
+            <ol>
+                <li>Entre em contato conosco</li>
+                <li>Solicite um orçamento</li>
+                <li>Desenvolvemos a solução ideal para você</li>
+                <li>Veja seu negócio crescer com a InovaWeb</li>
+            </ol>
 
+            <div class="table-container">
+                <table>
+                    <caption>Preços Médios dos Serviços</caption>
+                    <thead> 
+                        <tr>
+                            <th scope="col">Serviço</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desenvolvimento de sites</td>
+                            <td>R$ 2.000,00</td>
+                            <td>Criação e ajustes simples de sites</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvimento de apps</td>
+                            <td>R$ 5.000,00</td>
+                            <td>Criação e ajustes simples de apps</td>
+                        </tr>
+                        <tr>
+                            <td>Consultoria em Tecnologia</td>
+                            <td>R$ 500,00/hora</td>
+                            <td>Orientação e planejamento tecnológico</td>
+                        </tr>
+                        <tr>
+                            <td>Suporte Técnico</td>
+                            <td>R$ 200,00/hora</td>
+                            <td>Assistência técnica e resolução de problemas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+        <section id="contato">
+            <h2>Formulário de contato</h2>
+            <form action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" maxlength="500" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 InovaWeb - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
